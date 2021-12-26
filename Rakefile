@@ -4,11 +4,11 @@ require 'fileutils'
 
 DISTRIBUTIONS = [
   { rb_platform: 'x86_64-darwin', tuple: %w(darwin amd64) },
-  # { rb_platform: 'arm64-darwin',  tuple: %w(darwin arm64) },
-  # { rb_platform: 'x86_64-linux',  tuple: %w(linux amd64) },
-  # { rb_platform: 'aarch64-linux', tuple: %w(linux arm64) },
-  # { rb_platform: 'ppc64le-linux', tuple: %w(linux ppc64le) },
-  # { rb_platform: 'x64-mswin64',   tuple: %w(windows amd64), ext: '.exe' }
+  { rb_platform: 'arm64-darwin',  tuple: %w(darwin arm64) },
+  { rb_platform: 'x86_64-linux',  tuple: %w(linux amd64) },
+  { rb_platform: 'aarch64-linux', tuple: %w(linux arm64) },
+  { rb_platform: 'ppc64le-linux', tuple: %w(linux ppc64le) },
+  { rb_platform: 'x64-mswin64',   tuple: %w(windows amd64), ext: '.exe' }
 ]
 
 task :build do
